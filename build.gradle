@@ -1,5 +1,7 @@
-apply plugin: 'java'
-apply plugin: 'maven'
+plugins {
+    id 'java'
+    id 'maven' version '3.9.6'
+}
 
 group = 'net.praqma.codeacademy'
 version = '0.0.1-SNAPSHOT'
