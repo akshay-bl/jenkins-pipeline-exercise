@@ -1,5 +1,5 @@
 apply plugin: 'java'
-apply plugin: 'maven'
+# apply plugin: 'maven'
 
 group = 'net.praqma.codeacademy'
 version = '0.0.1-SNAPSHOT'
