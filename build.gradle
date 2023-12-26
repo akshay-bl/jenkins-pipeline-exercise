@@ -1,5 +1,5 @@
 apply plugin: 'java'
-apply plugin: 'maven'
+//apply plugin: 'maven'
 
 group = 'net.praqma.codeacademy'
 version = '0.0.1-SNAPSHOT'
@@ -14,7 +14,7 @@ tasks.withType(JavaCompile) {
 
 repositories {
      maven { url "http://repo.jenkins-ci.org/public/" }
-     maven { url "http://repo.maven.apache.org/maven2" }
+     //maven { url "http://repo.maven.apache.org/maven2" }
 }
 dependencies {
     testCompile group: 'junit', name: 'junit', version:'4.12'
