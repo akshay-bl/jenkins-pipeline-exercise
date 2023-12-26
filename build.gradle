@@ -12,10 +12,10 @@ tasks.withType(JavaCompile) {
         options.encoding = 'UTF-8'
 }
 
-repositories {
-     maven { url "http://repo.jenkins-ci.org/public/" }
-     //maven { url "http://repo.maven.apache.org/maven2" }
-}
+// repositories {
+//      maven { url "http://repo.jenkins-ci.org/public/" }
+//      maven { url "http://repo.maven.apache.org/maven2" }
+// }
 dependencies {
     testImplementation 'junit:junit:4.12'
 }
