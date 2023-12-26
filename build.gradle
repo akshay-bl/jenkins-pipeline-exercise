@@ -1,27 +1,31 @@
-apply plugin: 'java'
-
-group = 'net.praqma.codeacademy'
-version = '0.0.1-SNAPSHOT'
-
-description = """gildedrose"""
-
-sourceCompatibility = 11
-targetCompatibility = 11
-tasks.withType(JavaCompile) {
-    options.encoding = 'UTF-8'
+// Define the Java plugin for your project
+plugins {
+    id 'java'
 }
 
+// Define repositories for resolving dependencies
 repositories {
-    maven {
-        url "http://repo.jenkins-ci.org/public/"
-        allowInsecureProtocol = true // Allowing insecure protocol explicitly
-    }
-    maven {
-        url "http://repo.maven.apache.org/maven2"
-        allowInsecureProtocol = true // Allowing insecure protocol explicitly
+    mavenCentral()
+}
+
+// Dependencies for your project
+dependencies {
+    // JUnit Jupiter API for writing tests
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+
+    // JUnit Jupiter Engine to execute tests
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+// Define Java source compatibility and target compatibility
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(11)
     }
 }
 
-dependencies {
-    testImplementation 'junit:junit:4.12'
+// Gradle tasks configuration
+test {
+    // Use JUnit Platform for running tests
+    useJUnitPlatform()
 }
