@@ -1,5 +1,4 @@
 apply plugin: 'java'
-//apply plugin: 'maven'
 
 group = 'net.praqma.codeacademy'
 version = '0.0.1-SNAPSHOT'
@@ -9,16 +8,20 @@ description = """gildedrose"""
 sourceCompatibility = 11
 targetCompatibility = 11
 tasks.withType(JavaCompile) {
-        options.encoding = 'UTF-8'
+    options.encoding = 'UTF-8'
 }
 
 repositories {
-     maven { url "http://repo.jenkins-ci.org/public/" }
-     maven { url "http://repo.maven.apache.org/maven2" }
+    maven {
+        url "http://repo.jenkins-ci.org/public/"
+        allowInsecureProtocol = true // Allowing insecure protocol explicitly
+    }
+    maven {
+        url "http://repo.maven.apache.org/maven2"
+        allowInsecureProtocol = true // Allowing insecure protocol explicitly
+    }
 }
+
 dependencies {
     testImplementation 'junit:junit:4.12'
 }
-// dependencies {
-//     testCompile group: 'junit', name: 'junit', version:'4.12'
-// }
