@@ -6,8 +6,8 @@ version = '0.0.1-SNAPSHOT'
 
 description = """gildedrose"""
 
-sourceCompatibility = 17
-targetCompatibility = 17
+sourceCompatibility = 11
+targetCompatibility = 11
 tasks.withType(JavaCompile) {
         options.encoding = 'UTF-8'
 }
