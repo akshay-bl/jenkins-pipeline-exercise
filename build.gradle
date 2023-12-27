@@ -13,8 +13,8 @@ tasks.withType(JavaCompile) {
 }
 
 repositories {  
-     maven { url "http://repo.jenkins-ci.org/public/" }
-     maven { url "http://repo.maven.apache.org/maven2" }
+     maven { url "https://repo.jenkins-ci.org/public/" }
+     maven { url "https://repo.maven.apache.org/maven2" }
 }
 dependencies {
     testImplementation 'junit:junit:4.12'
