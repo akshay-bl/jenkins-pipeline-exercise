@@ -8,15 +8,15 @@ WE ARE USING JENKIJES PIPELINE FOR THIS TO RUN THIS USING PIPELINE.
 GRADLE FILE = (build.gradle) and 
 jenknes file = Jnkinesfile 
 
-# STEPES: 
-1) ON AWS:
+#### STEPES: ##### ===============================================================================================
+##1) ON AWS:
 #*****prereqizites for this = 1 MASTER (jenkiens installed  with java vesion 11 , git plugin ) AND 1 NODE (with java vesion 11 and garadle 7.3.3 ) FOR THIS . node is conected with master. *****#
 
 ***check gradle 7.3.3 and java 11 versions are inatlled on node.****
 
-2) check this file  "jenkins-pipeline-exercise/gradle/wrapper/gradle-wrapper.properties" is with geadle version 7.3.3 or version you used 
+##2) check this file  "jenkins-pipeline-exercise/gradle/wrapper/gradle-wrapper.properties" is with geadle version 7.3.3 or version you used 
 
-3) plubines chaek as per your usecase
+##3) plubines chaek as per your usecase
 * file build.gradle is with  java version 11
 * for sceure way run  https we used
 * check depndancies as per your reqiermntes
@@ -42,4 +42,4 @@ dependencies {
     testImplementation 'junit:junit:4.12'		## check depndancies as per your reqiermntes 
 }"
 
-5) jeniikes pipeline with run the code using gadle as per pipeline . and chek 3 tetscases are get passed in this .
+##4) jeniikes pipeline with run the code using gadle as per pipeline . and chek 3 tetscases are get passed in this .
