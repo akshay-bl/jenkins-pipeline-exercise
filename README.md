@@ -152,4 +152,30 @@ jenknes file = Jnkinesfile
 
 2) check this file  "jenkins-pipeline-exercise/gradle/wrapper/gradle-wrapper.properties" is with geadle version 7.3.3 or version you used 
 
-3)
+3) plubines chaek as per your usecase
+* file build.gradle is with  java version 11
+* for sceure way run  https we used
+* check depndancies as per your reqiermntes
+
+"apply plugin: 'java'
+
+group = 'net.praqma.codeacademy'
+version = '0.0.1-SNAPSHOT'
+
+description = """gildedrose"""
+
+sourceCompatibility = 11  ## java version 11
+targetCompatibility = 11  ## java version 11
+tasks.withType(JavaCompile) {
+	options.encoding = 'UTF-8'
+}
+
+repositories {  
+     maven { url "https://repo.jenkins-ci.org/public/" }   ## for sceure way run  https we used
+     maven { url "https://repo.maven.apache.org/maven2" }  ## for sceure way run  https we used
+}
+dependencies {
+    testImplementation 'junit:junit:4.12'		## check depndancies as per your reqiermntes 
+}"
+
+5) jeniikes pipeline with run the code using gadle as per pipeline . and chek 3 tetscases are get passed in this .
