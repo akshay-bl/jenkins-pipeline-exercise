@@ -134,8 +134,10 @@ stage('parallel'){
 * Stash the results instead of archiving. Call them `jar` and `javadoc`
 * Unstash them in the `Results` step in the end where you archive them.
 
-  
-#################################################################################################################################
+
+
+              NEW ADDED TO THIS FILE 
+##########################################################################################
 			*****NOTES******
    
 WHAT WE ARE DONG IN THIS WE ARE RUNING THE JAVA CODE AND TEST CASES USING GRADLE .
