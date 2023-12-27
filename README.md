@@ -136,9 +136,10 @@ stage('parallel'){
 
 
 
-              NEW ADDED TO THIS FILE 
+             
 ##########################################################################################
-			*****NOTES******
+	*************** NEW ADDED TO THIS FILE ************		
+   			 *****NOTES******
    
 WHAT WE ARE DONG IN THIS WE ARE RUNING THE JAVA CODE AND TEST CASES USING GRADLE .
 WE ARE USING JENKIJES PIPELINE FOR THIS TO RUN THIS USING PIPELINE.
