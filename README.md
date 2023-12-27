@@ -149,4 +149,7 @@ jenknes file = Jnkinesfile
 #*****prereqizites for this = 1 MASTER (jenkiens installed  with java vesion 11 , git plugin ) AND 1 NODE (with java vesion 11 and garadle 7.3.3 ) FOR THIS . node is conected with master. *****#
 
 ***check gradle 7.3.3 and java 11 versions are inatlled on node.****
-2) 
+
+2) check this file  "jenkins-pipeline-exercise/gradle/wrapper/gradle-wrapper.properties" is with geadle version 7.3.3 or version you used 
+
+3)
