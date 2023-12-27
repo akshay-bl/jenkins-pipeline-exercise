@@ -1,31 +1,45 @@
-################################################################################################################################# NOTES*
+##########################################################################################
+	*************** NEW ADDED TO THIS FILE ************		
+   			 *****NOTES******
+   
+WHAT WE ARE DONG IN THIS WE ARE RUNING THE JAVA CODE AND TEST CASES USING GRADLE .
+WE ARE USING JENKIJES PIPELINE FOR THIS TO RUN THIS USING PIPELINE.
 
-WHAT WE ARE DONG IN THIS WE ARE RUNING THE JAVA CODE AND TEST CASES USING GRADLE . WE ARE USING JENKIJES PIPELINE FOR THIS TO RUN THIS USING PIPELINE.
+GRADLE FILE = (build.gradle) and 
+jenknes file = Jnkinesfile 
 
-GRADLE FILE = (build.gradle) and jenknes file = Jnkinesfile
-STEPES:
+# STEPES: 
+1) ON AWS:
+#*****prereqizites for this = 1 MASTER (jenkiens installed  with java vesion 11 , git plugin ) AND 1 NODE (with java vesion 11 and garadle 7.3.3 ) FOR THIS . node is conected with master. *****#
 
-    ON AWS: #*****prereqizites for this = 1 MASTER (jenkiens installed with java vesion 11 , git plugin ) AND 1 NODE (with java vesion 11 and garadle 7.3.3 ) FOR THIS . node is conected with master. *****#
+***check gradle 7.3.3 and java 11 versions are inatlled on node.****
 
-check gradle 7.3.3 and java 11 versions are inatlled on node.*
+2) check this file  "jenkins-pipeline-exercise/gradle/wrapper/gradle-wrapper.properties" is with geadle version 7.3.3 or version you used 
 
-    check this file "jenkins-pipeline-exercise/gradle/wrapper/gradle-wrapper.properties" is with geadle version 7.3.3 or version you used
-
-    plubines chaek as per your usecase
-
-    file build.gradle is with java version 11
-    for sceure way run https we used
-    check depndancies as per your reqiermntes
+3) plubines chaek as per your usecase
+* file build.gradle is with  java version 11
+* for sceure way run  https we used
+* check depndancies as per your reqiermntes
 
 "apply plugin: 'java'
 
-group = 'net.praqma.codeacademy' version = '0.0.1-SNAPSHOT'
+group = 'net.praqma.codeacademy'
+version = '0.0.1-SNAPSHOT'
 
 description = """gildedrose"""
 
-sourceCompatibility = 11 ## java version 11 targetCompatibility = 11 ## java version 11 tasks.withType(JavaCompile) { options.encoding = 'UTF-8' }
+sourceCompatibility = 11  ## java version 11
+targetCompatibility = 11  ## java version 11
+tasks.withType(JavaCompile) {
+	options.encoding = 'UTF-8'
+}
 
-repositories {
-maven { url "https://repo.jenkins-ci.org/public/" } ## for sceure way run https we used maven { url "https://repo.maven.apache.org/maven2" } ## for sceure way run https we used } dependencies { testImplementation 'junit:junit:4.12' ## check depndancies as per your reqiermntes }"
+repositories {  
+     maven { url "https://repo.jenkins-ci.org/public/" }   ## for sceure way run  https we used
+     maven { url "https://repo.maven.apache.org/maven2" }  ## for sceure way run  https we used
+}
+dependencies {
+    testImplementation 'junit:junit:4.12'		## check depndancies as per your reqiermntes 
+}"
 
-    jeniikes pipeline with run the code using gadle as per pipeline . and chek 3 tetscases are get passed in this .
+5) jeniikes pipeline with run the code using gadle as per pipeline . and chek 3 tetscases are get passed in this .
